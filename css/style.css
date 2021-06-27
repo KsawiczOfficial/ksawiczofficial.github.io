@@ -1,0 +1,92 @@
+body, html
+{
+    height: 100%;
+}
+
+.home
+{
+    height: 100%;
+ 
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-image: url("../img/canyon-1740973_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation-name: mainBgZoom;
+    animation-duration: 6s;
+}
+
+.home h1
+{
+    animation-name: mainTextIn;
+    animation-duration: 6s;
+}
+
+.aboutme
+{
+    height: 40%;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio
+{
+    height: 80%;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact
+{
+    height: 40%;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer
+{
+    height: 5%;
+ 
+    background-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar
+{
+    padding: 5%;
+}
+
+@keyframes mainTextIn
+{
+    0%{filter: opacity(0);}
+    25%{filter: opacity(0);}
+    100%{filter: opacity(1);}
+}
+
+@keyframes mainBgZoom
+{
+    0%{filter: blur(2px)}
+    25%{filter: blur(2px)}
+    100%{filter: blur(0);}
+}
